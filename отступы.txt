@@ -1,0 +1,6 @@
+padding - расстояние то блочного элемента до его границы
+padding-top/margin-top - верхний 
+padding-left/matgin-left - левый
+padding-bottom/margin-bottom - нижний
+padding-right/margin-right - правый
+padding/margin - отступ (вн/внеш)
