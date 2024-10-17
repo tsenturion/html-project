@@ -1,20 +1,58 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Список фруктов</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-    <ul class="fruit-list">
-        <li>1.<span class="text">Apple</span> </li>
-        <li>2.<span class="text">Orange</span> </li>
-        <li>3.<span class="text">Pineapple</span> </li>
-        <li>4.<span class="text">Pear</span> </li>
-        <li>5.<span class="text">Cherry</span> </li>
+<style>
+    ul {
+        list-style: none;
+        }
+    .li1 {
+        
+        background: url("icons/arrow_16.png") no-repeat left center;
+        padding-left: 20px;
+    }
+    
+    .winter {
+        background: url("icons/winter_16.png") no-repeat left center;
+        padding-left: 20px;
+    }
+    
+    .spring {
+        background: url("icons/spring_16.png") no-repeat left center;
+        padding-left: 20px;
+    }
+    
+    .summer {
+        background: url("icons/summer_16.png") no-repeat left center;
+        padding-left: 20px;
+    }
+    
+    .autum {
+        background: url("icons/autumn_16.png") no-repeat left center;
+        padding-left: 20px;
+    }
+    
+    </style>
+    
+    <ul>
+        <li class="li1">Winter</li>
+        <ul>
+            <li class="winter">December</li>
+            <li class="winter">January</li>
+            <li class="winter">February</li>
+        </ul>
+        <li class="li1">Spring</li>
+        <ul>
+            <li class="spring">March</li>
+            <li class="spring">April</li>
+            <li class="spring">May</li>
+        </ul>
+        <li class="li1">Summer</li>
+        <ul>
+            <li class="summer">June</li>
+            <li class="summer">July</li>
+            <li class="summer">May</li>
+        </ul>
+        <li class="li1">Autumn</li>
+        <ul>
+            <li class="autum">September</li>
+            <li class="autum">October</li>
+            <li class="autum">November</li>
+        </ul>
     </ul>
-
-</body>
-</html>
