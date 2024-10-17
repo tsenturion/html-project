@@ -1,0 +1,14 @@
+.Seasons {
+    font-weight: bold;
+    margin-top: 10px;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mount {
+    margin-top: 10px;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
