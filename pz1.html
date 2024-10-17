@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .season {
+            font-weight: bold;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .season::after {
+            content: ">";
+            margin-left: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+        .month-list {
+            padding-left: 25px;
+        }
+        .month-list li {
+            display: flex;
+            align-items: center;
+        }
+        .month-list img {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Seasons</h1>
+<ul>
+    <li class="season">
+        Winter
+    </li>
+    <ul class="month-list">
+        <li><img src="icons/winter_16.png" alt="Winter Icon"> December</li>
+        <li><img src="icons/winter_16.png" alt="Winter Icon"> January</li>
+        <li><img src="icons/winter_16.png" alt="Winter Icon"> February</li>
+    </ul>
+
+    <li class="season">
+        Spring
+    </li>
+    <ul class="month-list">
+        <li><img src="icons/spring_16.png" alt="Spring Icon"> March</li>
+        <li><img src="icons/spring_16.png" alt="Spring Icon"> April</li>
+        <li><img src="icons/spring_16.png" alt="Spring Icon"> May</li>
+    </ul>
+
+    <li class="season">
+        Summer
+    </li>
+    <ul class="month-list">
+        <li><img src="icons/summer_16.png" alt="Summer Icon"> June</li>
+        <li><img src="icons/summer_16.png" alt="Summer Icon"> July</li>
+        <li><img src="icons/summer_16.png" alt="Summer Icon"> August</li>
+    </ul>
+
+    <li class="season">
+        Autumn
+    </li>
+    <ul class="month-list">
+        <li><img src="icons/autumn_16.png" alt="Autumn Icon"> September</li>
+        <li><img src="icons/autumn_16.png" alt="Autumn Icon"> October</li>
+        <li><img src="icons/autumn_16.png" alt="Autumn Icon"> November</li>
+    </ul>
+</ul>
+
+</body>
+</html>
