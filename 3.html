@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея изображений</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .large-image {
+            border: 2px;
+            padding: 10px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            width: 256px;
+            height: 256px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .large-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .thumbnails {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .thumbnails img {
+            width: 64px;
+            height: 64px;
+            border: 2px;
+            margin: 5px;
+            cursor: pointer;
+            transition: border-color 0.3s ease;
+        }
+
+        .thumbnails img:hover {
+            border-color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Галерея изображений</h1>
+    <div class="gallery">
+        <div class="large-image" id="large-image">
+            <img src="icons_practice_module_3/cat_box_256.png" alt="cat_box">
+        </div>
+        <div class="thumbnails">
+            <img src="icons_practice_module_3/cat_box_64.png" alt="cat_box" onclick="changeImage('icons_practice_module_3/cat_box_256.png')">
+            <img src="icons_practice_module_3/cat_cage_64.png" alt="cat_cage" onclick="changeImage('icons_practice_module_3/cat_cage_256.png')">
+            <img src="icons_practice_module_3/cat_clean_64.png" alt="cat_clean" onclick="changeImage('icons_practice_module_3/cat_clean_256.png')">
+            <img src="icons_practice_module_3/cat_eyes_64.png" alt="cat_eyes" onclick="changeImage('icons_practice_module_3/cat_eyes_256.png')">
+            <img src="icons_practice_module_3/cat_purr_64.png" alt="cat_purr" onclick="changeImage('icons_practice_module_3/cat_purr_256.png')">
+            <img src="icons_practice_module_3/cat_tied_64.png" alt="cat_tied" onclick="changeImage('icons_practice_module_3/cat_tied_256.png')">
+        </div>
+    </div>
+
+    <script>
+        function changeImage(imageSrc) {
+            const largeImage = document.getElementById('large-image').querySelector('img');
+            largeImage.src = imageSrc;
+        }
+    </script>
+</body>
+</html>
