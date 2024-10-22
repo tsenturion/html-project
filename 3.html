@@ -19,24 +19,32 @@
             margin-top: 20px;
         }
 
-        .gallery {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        table {
+            border: 2px solid #333;
+            border-collapse: collapse;
             margin-top: 20px;
         }
 
-        .large-image {
-            border: 2px;
+        td {
+            border: 2px solid #333;
             padding: 10px;
             background-color: #fff;
-            margin-bottom: 20px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        td[colspan="6"] {
+            height: 300px; 
+        }
+
+        .large-image {
             width: 256px;
             height: 256px;
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: hidden;
+            margin: 0 auto; 
         }
 
         .large-image img {
@@ -45,17 +53,9 @@
             object-fit: contain;
         }
 
-        .thumbnails {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
         .thumbnails img {
             width: 64px;
             height: 64px;
-            border: 2px;
-            margin: 5px;
             cursor: pointer;
             transition: border-color 0.3s ease;
         }
@@ -67,19 +67,23 @@
 </head>
 <body>
     <h1>Галерея изображений</h1>
-    <div class="gallery">
-        <div class="large-image" id="large-image">
-            <img src="icons_practice_module_3/cat_box_256.png" alt="cat_box">
-        </div>
-        <div class="thumbnails">
-            <img src="icons_practice_module_3/cat_box_64.png" alt="cat_box" onclick="changeImage('icons_practice_module_3/cat_box_256.png')">
-            <img src="icons_practice_module_3/cat_cage_64.png" alt="cat_cage" onclick="changeImage('icons_practice_module_3/cat_cage_256.png')">
-            <img src="icons_practice_module_3/cat_clean_64.png" alt="cat_clean" onclick="changeImage('icons_practice_module_3/cat_clean_256.png')">
-            <img src="icons_practice_module_3/cat_eyes_64.png" alt="cat_eyes" onclick="changeImage('icons_practice_module_3/cat_eyes_256.png')">
-            <img src="icons_practice_module_3/cat_purr_64.png" alt="cat_purr" onclick="changeImage('icons_practice_module_3/cat_purr_256.png')">
-            <img src="icons_practice_module_3/cat_tied_64.png" alt="cat_tied" onclick="changeImage('icons_practice_module_3/cat_tied_256.png')">
-        </div>
-    </div>
+    <table>
+        <tr>
+            <td colspan="6">
+                <div class="large-image" id="large-image">
+                    <img src="icons_practice_module_3/cat_box_256.png" alt="cat_box">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="icons_practice_module_3/cat_box_64.png" alt="cat_box" onclick="changeImage('icons_practice_module_3/cat_box_256.png')"></td>
+            <td><img src="icons_practice_module_3/cat_cage_64.png" alt="cat_cage" onclick="changeImage('icons_practice_module_3/cat_cage_256.png')"></td>
+            <td><img src="icons_practice_module_3/cat_clean_64.png" alt="cat_clean" onclick="changeImage('icons_practice_module_3/cat_clean_256.png')"></td>
+            <td><img src="icons_practice_module_3/cat_eyes_64.png" alt="cat_eyes" onclick="changeImage('icons_practice_module_3/cat_eyes_256.png')"></td>
+            <td><img src="icons_practice_module_3/cat_purr_64.png" alt="cat_purr" onclick="changeImage('icons_practice_module_3/cat_purr_256.png')"></td>
+            <td><img src="icons_practice_module_3/cat_tied_64.png" alt="cat_tied" onclick="changeImage('icons_practice_module_3/cat_tied_256.png')"></td>
+        </tr>
+    </table>
 
     <script>
         function changeImage(imageSrc) {
