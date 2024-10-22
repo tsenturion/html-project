@@ -1,87 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seasons</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        li {
-            display: flex;
-            align-items: center;
-            margin-bottom: 5px;
-        }
-        .season {
-            font-weight: bold;
-            margin-top: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .season::after {
-            content: ">";
-            margin-left: 10px;
-            font-size: 16px;
-            color: #333;
-        }
-        .month-list {
-            padding-left: 25px;
-        }
-        .month-list li {
-            display: flex;
-            align-items: center;
-        }
-        .month-list img {
-            margin-right: 10px;
-        }
-    </style>
-</head>
-<body>
+<style>
+    ol {
+        color: rgb(52, 52, 159); /* Синий цвет для текста */
+    }
 
-<h1>Seasons</h1>
-<ul>
-    <li class="season">
-        Winter
-    </li>
-    <ul class="month-list">
-        <li><img src="icons/winter_16.png" alt="Winter Icon"> December</li>
-        <li><img src="icons/winter_16.png" alt="Winter Icon"> January</li>
-        <li><img src="icons/winter_16.png" alt="Winter Icon"> February</li>
-    </ul>
+    ol li::marker {
+        color: black; /* Черный цвет для маркера */
+        font-weight: bold; /* Жирный шрифт для маркера */
+    }
 
-    <li class="season">
-        Spring
-    </li>
-    <ul class="month-list">
-        <li><img src="icons/spring_16.png" alt="Spring Icon"> March</li>
-        <li><img src="icons/spring_16.png" alt="Spring Icon"> April</li>
-        <li><img src="icons/spring_16.png" alt="Spring Icon"> May</li>
-    </ul>
+</style>
 
-    <li class="season">
-        Summer
-    </li>
-    <ul class="month-list">
-        <li><img src="icons/summer_16.png" alt="Summer Icon"> June</li>
-        <li><img src="icons/summer_16.png" alt="Summer Icon"> July</li>
-        <li><img src="icons/summer_16.png" alt="Summer Icon"> August</li>
-    </ul>
+<div class="my-div">
+    <h4>Contents</h4>
 
-    <li class="season">
-        Autumn
-    </li>
-    <ul class="month-list">
-        <li><img src="icons/autumn_16.png" alt="Autumn Icon"> September</li>
-        <li><img src="icons/autumn_16.png" alt="Autumn Icon"> October</li>
-        <li><img src="icons/autumn_16.png" alt="Autumn Icon"> November</li>
-    </ul>
-</ul>
+<ol type="I">
+    <li>History</li>
+    <ol>
+        <li>Development</li>
+        <li>HTML versions timeline</li>
+        <ol type="a">
+            <li>HTML draft version timeline</li>
+            <li>XHTML version</li>
+        </ol>
+    </ol>
+    <li>Markup</li>
+    <ol>
+        <li>Elements</li>
+        <ol type="a">
+            <li>Element examples</li>
+            <li>Attributes</li>
+        </ol>
+        <li>Character and entity referenses</li>
+        <li>Data types</li>
+        <li>Document type declaration</li>
+    </ol>
+    <li>Semantic HTML</li>
+    <li>Deleviry</li>
+    <ol>
+        <li>HTTP</li>
+        <li>HTML e-mail</li>
+        <li>Naming convention</li>
+        <li>HTML Application</li>
+    </ol>
+    <li>HTML4 variations</li>
+    <ol>
+        <li>SGML-based versus XML-based HTML</li>
+        <li>Transitional versus strict</li>
+        <li>Frameset versus transitional</li>
+        <li>Summary of specification versions</li>
+    </ol>
+    <li>HTML5 variants</li>
+    <ol>
+        <li>WHATWG HTML versus HTML5</li>
+    </ol>
+    <li>Hypertext features not in HTML</li>
+    <li>WYSIWYG editors</li>
+    <li>See also</li>
+    <li>References</li>
+    <li>External links</li>
 
-</body>
-</html>
+</ol>
+</div>

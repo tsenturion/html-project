@@ -1,0 +1,12 @@
+ Том в устройстве C имеет метку BOOTCAMP
+ Серийный номер тома: 0246-9FF7
+
+ Содержимое папки C:\Users\Ефимов\Documents\Phoenix Code\html project\icons_practice_module_3
+
+[.]                 cat_cage_64.png     cat_purr_256.png    t.txt
+[..]                cat_clean_256.png   cat_purr_64.png     
+cat_box_256.png     cat_clean_64.png    cat_tied_256.png    
+cat_box_64.png      cat_eyes_256.png    cat_tied_64.png     
+cat_cage_256.png    cat_eyes_64.png     echo.bat            
+              14 файлов        136 561 байт
+               2 папок  17 063 792 640 байт свободно
