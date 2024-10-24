@@ -1,23 +1,80 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    background-image: url(https://i.pinimg.com/originals/be/1a/21/be1a211025c83e2b71224e1fa726a696.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    font-size: 30px;
+    background-color: white;
     display: flex;
 }
 
-.container {
-    width: 700px;
-    margin: 50px auto;
-    background-color: rgba(248, 248, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 10);    
+caption {
+    text-align: right;
 }
 
-div {
-    font-size: 20px;
+#table {
+    margin: 100px auto;
+    border: 3px solid rgb(138, 138, 138);
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
     text-align: center;
 }
+
+thead{
+    border: 3px solid white;
+}
+
+th {
+    padding: 20px;
+}
+
+#white {
+    color: white;
+}
+
+td {
+    padding: 20px;
+}
+
+.text {
+    color: white;
+    height: 30px;
+    width: 30px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: auto;
+}
+
+tfoot {
+    border: 3px solid white;
+    
+
+}
+
+.SPECIFICATION {
+    background-color:rgb(218, 218, 218);
+    color: white;
+}
+
+.FREE {
+    background-color:rgb(14, 170, 231);
+    color: white;
+}
+
+.BASIC {
+    background-color: rgb(17, 228, 87);
+    color: white;
+}
+
+.STANDART {
+    background-color:rgb(231, 173, 14);
+    color: white;
+}
+
+.PREMIUM {
+    background-color: rgb(211, 27, 27);
+    color: white;
+}
+
+
+
