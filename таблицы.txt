@@ -1,0 +1,29 @@
+text-align - выравнивание по горизонтали
+center -
+left
+right
+justify - по ширине
+initial - по умолчанию
+inherit - наследование от родительского
+
+vertical-align
+baseline - по базовой линии - по умолчанию
+top
+middle
+bottom
+initial
+inherit
+
+border-left
+border-right
+border-bottom
+border-top
+
+bordercolor
+frame - указывает как отображать границы вокруг таблицы
+rules - где отображать границы между ячейками
+
+
+
+
+
