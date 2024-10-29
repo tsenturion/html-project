@@ -1,0 +1,150 @@
+<style>
+    .main {
+        max-width: 1200px;
+        padding: 25px;
+        margin: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(243, 243, 243);
+    }
+
+    
+    ul {
+        list-style-type: none;
+        display: flex;
+        
+    }
+    li {
+        padding: 15px;
+        margin-right: 10px;
+        
+    }
+    
+    li:hover {
+        background-color: rgb(112, 30, 30);
+    }
+
+    .header {
+        display: flex;
+        background-color: brown;
+        padding-left: 15px;
+        align-items: center;
+        color: aliceblue;
+        height: 50px;
+        
+    }
+    .content {
+        display: flex;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .box1 {
+        padding-right: 10px;
+        width: 70%;
+    }
+    .box2 {
+        background-color: rgb(216, 216, 216);
+        width: 30%;
+        height: fit-content;
+    }
+    .img {
+        text-align: center;
+        padding-top: 10px;
+    }
+    .img-home {
+        width: 90%;
+        height: 90%;
+        text-align: center;
+    }
+    tr {
+        font-size: 12;
+    }
+    td {
+        vertical-align: top;
+        padding-right: 5px;
+    }
+    td:nth-child(odd) {
+        font-weight: bold;
+    }
+    table {
+        padding: 10px;
+    }
+
+    img {
+        width: 80px;
+        height: 120px;
+    }
+    .autor {
+        border: 1px solid black;
+        margin-top: 10px;
+    }
+    .name-autor td {
+        font-weight: normal;
+    }
+</style>
+
+<div class="main">
+    <div class="header">
+        <div class="header__name">
+            <h3>WRITERS</h3>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>Discussions</li>
+                <li>Books</li>
+                <li>The authors</li>
+                <li>Reades</li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="box1">
+            <h1>William Shakespeare</h1>
+            <hr>
+            <p style="font-style: italic; font-weight: 8px;">From Wikipedia, the free encyclopedia</p>
+            <p>William Shakespeare (bapt. 26 April 1564 Ц 23 April 1616) was an English poet, playwright and actor, widely regarded as the greatest writer in the English language and the world's greatest dramatist. He is often called England's national poet and the "Bard of Avon". His extant works, including collaborations, consist of approximately 39 plays, 154 sonnets, two long narrative poems, and a few other verses, some of uncertain authorship. His plays have been translated into every major living language and are performed more often than those of any other playwright.</p>
+            
+            <p>Shakespeare was born and raised in Stratford-upon-Avon, Warwickshire. At the age of 18, he married Anne Hathaway, with whom he had three children: Susanna and twins Hamnet and Judith. Sometime between 1585 and 1592, he began a successful career in London as an actor, writer, and part-owner of a playing company called the Lord Chamberlain's Men, later known as the King's Men. At age 49 (around 1613), he appears to have retired to Stratford, where he died three years later. Few records of Shakespeare's private life survive; this has stimulated considerable speculation about such matters as his physical appearance, his sexuality, his religious beliefs, and whether the works attributed to him were written by others. Such theories are often criticised for failing to adequately note that few records survive of most commoners of the period.</p>
+            
+            <p>Shakespeare produced most of his known works between 1589 and 1613. His early plays were primarily comedies and histories and are regarded as some of the best work produced in these genres. Until about 1608, he wrote mainly tragedies, among them Hamlet, Othello, King Lear, and Macbeth, all considered to be among the finest works in the English language. In the last phase of his life, he wrote tragicomedies (also known as romances) and collaborated with other playwrights.</p>
+            
+            <p>Many of Shakespeare's plays were published in editions of varying quality and accuracy in his lifetime. However, in 1623, two fellow actors and friends of Shakespeare's, John Heminges and Henry Condell, published a more definitive text known as the First Folio, a posthumous collected edition of Shakespeare's dramatic works that included all but two of his plays. The volume was prefaced with a poem by Ben Jonson, in which Jonson presciently hails Shakespeare in a now-famous quote as "not of an age, but for all time".</p>
+            
+            <p>Throughout the 20th and 21st centuries, Shakespeare's works have been continually adapted and rediscovered by new movements in scholarship and performance. His plays remain popular and are studied, performed, and reinterpreted through various cultural and political contexts around the world.</p>
+
+        </div>
+        <div class="box2">
+            <div class="img">
+                <img class="img-home" src="icon_practice/Oscar_Wilde_Sarony.jpg">
+            </div>
+            <table>
+                <tr>
+                    <td>Born</td><td>26 April 1564</td>
+                </tr>
+                <tr>
+                    <td>Died</td><td>23 April 1616</td>
+                </tr>
+                <tr>
+                    <td>Spouse</td><td>Anne Hathaway (m. 1582)</td>
+                </tr>
+                <tr>
+                    <td>Children</td><td>Susanna Hall<br>Hamnet Shakespeare<br>Judith Quiney</td>
+                </tr>
+                <tr>
+                    <td>Parents</td><td>John Shakespeare (father)<br>Mary Arden (mother)</td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+    <div class="box3">
+        <b>Similar autors:</b>
+        <table class="autor">
+            <tr>
+                <td><img src="icon_practice/Anne_Hathaway.jpg" alt=""></td><td><img src="icon_practice/Cervantes_Jauregui.jpg" alt=""></td><td><img src="icon_practice/Dickens_Gurney.jpg" alt=""></td><td><img src="icon_practice/Edgar_Allan_Poe.jpg" alt=""></td><td><img src="icon_practice/Oscar_Wilde_Sarony.jpg" alt=""></td><td><img src="icon_practice/WilliamWordsworth.jpg" alt=""></td>
+            </tr>
+            <tr class="name-autor">
+                <td>Name</td><td>Name</td><td>Name</td><td>Name</td><td>Name</td><td>Name</td>
+            </tr>
+        </table>
+    </div>
+</div>
