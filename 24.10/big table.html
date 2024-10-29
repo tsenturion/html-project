@@ -1,76 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<table>
-    <caption>Title table</caption>
-    <colgroup>
-        <col class="col-1">
-        <col class="col-2">
-        <col class="col-3">
-        <col class="col-4">
-        <col class="col-5">
-    </colgroup>
-    <thead>
-        <tr>
-            <th>specification</th>
-            <th>free</th>
-            <th>basic</th>
-            <th>standard</th>
-            <th>premium</th>
-        </tr>
-    </thead>
-    <tfoot>
-        <tr>
-            <th>Total</th>
-            <th>$ 0.00</th>
-            <th>$ 9.99</th>
-            <th>$ 19.99</th>
-            <th>$ 29.99</th>
-        </tr>
-    </tfoot>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: separate; /* Используем separate для возможности скругления углов */
+            border-spacing: 0; /* Убираем промежутки между ячейками */
+            border-radius: 30px; /* Скругляем углы таблицы */
+            overflow: hidden; /* Это позволяет скругление на самом контейнере таблицы */
+        }
 
-    <tbody>
-        <tr>
-            <td>Lorem ipsum dolor</td>
-            <td>+</td>
-            <td>+</td>
-            <td>+</td>
-            <td>+</td>
-        </tr>
-        <tr>
-            <td>Ratione deserunt modi</td>
-            <td>+</td>
-            <td>+</td>
-            <td>+</td>
-            <td>+</td>
-        </tr>
-        <tr>
-            <td>Vel maiores odio</td>
-            <td>-</td>
-            <td>+</td>
-            <td>+</td>
-            <td>+</td>
-        </tr>
-        <tr>
-            <td>Minus vel aperiam natus</td>
-            <td>-</td>
-            <td>-</td>
-            <td>+</td>
-            <td>+</td>
-        </tr>
-        <tr>
-            <td>Provid minima sapiente</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>+</td>
-        </tr>
-        <tr>
-            <td>Eveniet eaque excepturi</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>+</td>
-        </tr>
-    </tbody>
-</table>
+        th, td {
+            border: 1px solid #ccc; /* Для теста можно оставить border, но для правильного скругления лучше без */
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Применим стили скругления только к угловым ячейкам */
+        th:first-child {
+            border-top-left-radius: 30px;
+        }
+
+        th:last-child {
+            border-top-right-radius: 30px;
+        }
+
+        tr:last-child td:first-child {
+            border-bottom-left-radius: 30px;
+        }
+
+        tr:last-child td:last-child {
+            border-bottom-right-radius: 30px;
+        }
+
+        /* Стиль заголовков и ячеек */
+        th {
+            background-color: rgb(223, 223, 223);
+        }
+
+        td {
+            background-color: rgba(218, 218, 218, 0.29);
+        }
+
+        /* Кнопка START */
+        button {
+            padding: 5px 10px;
+            background-color: #E0E0E0;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #C0C0C0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="border">
+    <table>
+        <thead>
+            <tr>
+                <th style="background-color: rgb(194, 194, 255);" class="main">Choose your plan</th>
+                <th style="background-color: rgb(160, 160, 255);">
+                    <p>starter</p>
+                    <p class="price">$10</p>
+                    <p>per month</p>
+                </th>
+                <th style="background-color: rgb(117, 117, 255);" class="main">
+                    <p>econom</p>
+                    <p class="price">$30</p>
+                    <p>per month</p>
+                </th>
+                <th style="background-color: rgb(80, 80, 255);" class="main">
+                    <p>standard</p>
+                    <p class="price">$59</p>
+                    <p>per month</p>
+                </th>
+                <th style="background-color: rgb(55, 55, 255);" class="main">
+                    <p>professional</p>
+                    <p class="price">$99</p>
+                    <p>per month</p>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td class="id1">Amount of space</td><td>20GB</td><td>40GB</td><td>110GB</td><td>Unlimited</td></tr>
+            <tr><td class="id1">Bandwidth per month</td><td>120GB</td><td>240GB</td><td>610GB</td><td>1300GB</td></tr>
+            <tr><td class="id1">Email accounts</td><td>1</td><td>15</td><td>60</td><td>Unlimited</td></tr>
+            <tr><td class="id1">MySQL databases</td><td>1</td><td>15</td><td>60</td><td>Unlimited</td></tr>
+            <tr><td class="id1">24/7 support</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+            <tr><td class="id1">Support tickets per month</td><td>2</td><td>6</td><td>14</td><td>20</td></tr>
+            <tr>
+                <td></td>
+                <td><button>START</button></td>
+                <td><button>START</button></td>
+                <td><button>START</button></td>
+                <td><button>START</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
