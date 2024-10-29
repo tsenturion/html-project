@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            border-radius: 10px; 
+            overflow: hidden; 
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+        th:first-child {
+            background-color: #B2C0E0; 
+            color: white;
+        }
+        th:nth-child(2) {
+            background-color: #9FA7D3;
+            color: white;
+        }
+        th:nth-child(3) {
+            background-color: #7E94B2;
+            color: white;
+        }
+        th:nth-child(4) {
+            background-color: #5C7291;
+            color: white;
+        }
+        th:nth-child(5) {
+            background-color: #3B4F70; 
+            color: white;
+        }
+        
+        tr:nth-child(odd) td {
+            background-color: rgba(150, 170, 190, 0.4); 
+        }
+        tr:nth-child(even) td {
+            background-color: rgba(190, 210, 230, 0.4); 
+        }
+        
+        td:nth-child(2) {
+            background-color: rgba(90, 110, 140, 0.3); 
+        }
+        td:nth-child(3) {
+            background-color: rgba(70, 90, 120, 0.3);
+        }
+        td:nth-child(4) {
+            background-color: rgba(50, 70, 100, 0.3);
+        }
+        td:nth-child(5) {
+            background-color: rgba(30, 50, 80, 0.3);
+        }
+
+        td:nth-child(2):nth-child(odd) {
+            background-color: rgba(90, 110, 140, 0.7); 
+        }
+        td:nth-child(3):nth-child(odd) {
+            background-color: rgba(70, 90, 120, 0.7);
+        }
+        td:nth-child(4):nth-child(odd) {
+            background-color: rgba(50, 70, 100, 0.7);
+        }
+        td:nth-child(5):nth-child(odd) {
+            background-color: rgba(30, 50, 80, 0.7);
+        }
+
+        td:first-child {
+            background-color: #3B4F70;
+
+        }
+
+        td button {
+            padding: 10px 20px;
+            background-color: #E0E0E0;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px; 
+        }
+        td button:hover {
+            background-color: #C0C0C0;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>Choose your plan</th>
+        <th>starter</th>
+        <th>econom</th>
+        <th>standard</th>
+        <th>professional</th>
+    </tr>
+    <tr>
+        <td>$ per month</td>
+        <td>$10</td>
+        <td>$30</td>
+        <td>$59</td>
+        <td>$99</td>
+    </tr>
+    <tr>
+        <td>Amount of space</td>
+        <td>20GB</td>
+        <td>40GB</td>
+        <td>110GB</td>
+        <td>Unlimited</td>
+    </tr>
+    <tr>
+        <td>Bandwidth per month</td>
+        <td>120GB</td>
+        <td>240GB</td>
+        <td>610GB</td>
+        <td>1300GB</td>
+    </tr>
+    <tr>
+        <td>Email accounts</td>
+        <td>1</td>
+        <td>15</td>
+        <td>60</td>
+        <td>Unlimited</td>
+    </tr>
+    <tr>
+        <td>MySQL databases</td>
+        <td>1</td>
+        <td>15</td>
+        <td>60</td>
+        <td>Unlimited</td>
+    </tr>
+    <tr>
+        <td>25h support</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>Support tickets per month</td>
+        <td>2</td>
+        <td>6</td>
+        <td>14</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><button>START</button></td>
+        <td><button>START</button></td>
+        <td><button>START</button></td>
+        <td><button>START</button></td>
+    </tr>
+</table>
+
+</body>
+</html>
