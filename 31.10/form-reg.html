@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>Send message to us</title>
+  </head>
+
+  <body>
+    <h3>We need your opinion!</h3>
+    <form action="/search" method="POST">
+      <div>
+        <label for="uname">Name:</label>
+        <input type="text" id="uname" name="userName" />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="userEmail" />
+      </div>
+      <div>
+        <label for="birth date">birth date:</label>
+        <input type="text" id="email" name="userEmail" />
+      </div>
+      <div>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="userGender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="userGender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="userGender" value="other" />
+        <label for="other">Other</label>
+      </div>
+      <div>
+        <label for="country">Country:</label>
+        <select id="country" name="userCountry">
+          <option value="RUSSIA">RUSSIA</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="Canada">Canada</option>
+          <option value="Australia">Australia</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div>
+        <label for="Hobbies:">Hobbies:</label>
+        <input type="checkbox" id="hobby1" name="userHobbies" value="reading" />
+        <label for="hobby1">Reading</label>
+        <input type="checkbox" id="hobby2" name="userHobbies" value="painting" />
+        <label for="hobby2">Painting</label>
+        <input type="checkbox" id="hobby3" name="userHobbies" value="traveling" />
+        <label for="hobby3">Traveling</label>
+        <input type="checkbox" id="hobby4" name="userHobbies" value="cooking" />
+        <label for="hobby4">Cooking</label>
+      </div>
+      <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="userAge" />
+      </div>
+    </form>
+  </body>
+</html>
